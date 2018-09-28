@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pizza Order Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Jubotron -->
+    <div class="jumbotron jumbotron-fluid text-center bg-danger">
+      <div class="container">
+        <h1 class="display-3">Pizza Menu</h1>
+      </div>
+    </div>
+    <!-- End Jumbotron -->
+    <!-- Form -->
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-3 offset-md-1 menu">
+          <h3>Size:</h3>
+          <input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+          <input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+          <input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+          <input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+        </div>
+        <div class="form-group col-md-3 offset-md-1 menu">
+          <h3>Meats:</h3>
+          <input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+          <input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage <br>
+          <input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br>
+          <input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+          <input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+          <input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+        </div>
+        <div class="form-group col-md-3 offset-md-1 menu">
+          <h3>Veggies:</h3>
+          <input class="veggies" type="checkbox" name="Veggie" value="Tomatoes"> Tomatoes<br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Onions"> Onions <br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Olives"> Olives<br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Green Peppers"> Green Peppers<br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Mushrooms"> Mushrooms<br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Pineapple"> Pineapple<br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Spinach"> Spinach<br>
+          <input class="veggies" type="checkbox" name="Veggie" value="Jalapeno"> Jalapeno<br>
+        </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-3 offset-md-1 menu">
+          <h3>Cheese:</h3>
+          <input class="cheese" type="radio" name="Cheese" value="Regular cheese" checked> Regular cheese<br>
+          <input class="cheese" type="radio" name="Cheese" value="No cheese"> No cheese<br>
+          <input class="cheese" type="radio" name="Cheese" value="Extra cheese"> Extra cheese<br>
+        </div>
+        <div class="form-group col-md-3 offset-md-1 menu">
+          <h3>Sauce:</h3>
+          <input class="sauce" type="radio" name="Sauce" value="Marinara sauce" checked> Marinara sauce<br>
+          <input class="sauce" type="radio" name="Sauce" value="White sauce"> White sauce<br>
+          <input class="sauce" type="radio" name="Sauce" value="Barbeque sauce"> Barbeque sauce<br>
+          <input class="sauce" type="radio" name="Sauce" value="No sauce"> No sauce<br>
+        </div>
+        <div class="form-group col-md-3 offset-md-1 menu">
+          <h3>Crust:</h3>
+          <input class="crust" type="radio" name="Crust" value="Plain Crust" checked> Plain Crust<br>
+          <input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+          <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
+          <input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+          <input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>
+        </div>
+      </div>
+      <div class="form-row">
+          <button type="button" class="btn btn-outline-danger btn-lg btn-block">Place Order</button>
+
+        </div>
+      </div>
+    </form>
+    <!-- End Form -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

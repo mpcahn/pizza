@@ -7,6 +7,14 @@ var priceList = {
   "Cheese Stuffed Crust": 3
 }
 
+function sumObj(obj) {
+  var sum = 0
+  for (var key in obj) {
+    sum += obj[key]
+  }
+  return sum
+}
+
 var reciept = {}
 
 $(".btn").click(function () {
@@ -87,7 +95,21 @@ $(".btn").click(function () {
     }
   }
 
-  console.log(reciept)
+  // Get total price
+  var total = sumObj(reciept)
+  
+  // Append reciept object to reciept table
+  
+  for (key in reciept) {
+    var item  = '<th class="item">' + key + '</th>'
+    var price = '<th class="item">' + reciept[key] + '</th>'
+
+    $('.table').find('tbody:last').append('<tr>' + item + price + '</tr>')
+  }
+
+  $('.table').find('tbody:last').append('<tr><th class="total">Total:</th><th class="total">' + total + '</th></tr>')
+
+  $('.reciept').css("opacity", "1")
   // Reset
   reciept = {}
   freeMeat = false

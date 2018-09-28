@@ -7,6 +7,7 @@
   <title>Pizza Order Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -75,9 +76,26 @@
       <div class="form-row">
         <button type="button" class="btn btn-outline-danger btn-lg btn-block">Place Order</button>
       </div>
+
+    </form>
+    <!-- End Form -->
+
+    <!-- Reciept -->
+    <div class="col-md-6 offset-md-3 mt-3 reciept">
+      <h1>Reciept:</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
   </div>
-  </form>
-  <!-- End Form -->
+  <!-- End Reciept -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS, then main.js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -87,8 +87,6 @@ $(".btn").click(function () {
     }
   }
 
-
-
   console.log(reciept)
   // Reset
   reciept = {}
